@@ -6,21 +6,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<!--   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+ -->  <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
   body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
+  	  font-family: 'Waiting for the Sunrise', cursive;
+  	  font-size: 50px;
+	  line-height: 1.8;
       color: #f5f6f7;
   }
+  mark {
+    background-color: #FFF7C0;
+}
   p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
+  
   .bg-1 { 
-      background-color: #88c1e8;
+      background-color: #FEDCD2;
       color: #555555;
   }
   .bg-2 { 
@@ -43,7 +48,7 @@
       padding-top: 70px;
       padding-bottom: 70px;
   }
-  .navbar {
+/*  .navbar {
       padding-top: 15px;
       padding-bottom: 15px;
       border: 0;
@@ -51,16 +56,16 @@
       margin-bottom: 0;
       font-size: 12px;
       letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
+  }*/
+/*  .navbar-nav  li a:hover {
       color: #1abc9c !important;
-  }
+  }*/
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
-<nav class="navbar navbar-default">
+<!-- <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -78,35 +83,45 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 
 
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Hello World!</h3>
-  <img src="mypic2.jpg" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="250" height="250">
-   <p> I am a rising third year studet at <span style="color: #555555;">University of Virginia</span>, studying <span style="color: #555555;">Computer Science</span> and <span style="color: #555555;">Statistics</span>!
-</p><p class="margin">
-I love coding, data, baseball, coffee, and music :) </p>
-<p></p>
-   <a href="index.html#skills" type="button" class="btn btn-primary btn-lg">Learn more</a>
-</div>
+  <div id="typedtext"></div>
+  <img src="mypic.jpeg" class="img-responsive img-circle" style="display:inline" alt="pic" width="300" height="300">
+  <h1> Jinnie Park  </h1>
+  <h4> <a href="mailto:jp7hk@virginia.edu"><i class="fa fa-envelope-o" style="font-size:24px"></i></a> 
+ <a href="https://www.linkedin.com/in/jinnie-park-900064101/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>    
+ <a href="https://github.com/jinniepark"><i class="fa fa-github" style="font-size:24px"></i></a> </h3>
+   <h4> University of Virginia</h4> 
+   <h4> Computer Science & Statistics</h4>
+</p><p>
+Loves coding, data, baseball, coffee, and music :) </p>
+
+<a href="index.html#skills" style="font-size:20px">Skills</a>
+<a href="index.html#projects" style="font-size:20px">Projects</a>
+<a href="index.html#resume" style="font-size:20px">Resume</a>
+ 
+
+<!--    <a href="index.html#skills" type="button" class="btn btn-primary btn-lg">Learn more</a>
+ --></div>
 
 
 <div class="container-fluid bg-2 text-center" id="skills">
-  <h3 class="margin"><i class="fa fa-gear" style="font-size:24px"></i>   SKILLS</h3>
+  <h2 class="margin"><i class="fa fa-gear" style="font-size:24px"></i>   SKILLS</h2>
   <div class="row">
     <div class="col-sm-4">
-  <h4> <i class="fa fa-laptop"></i>  Computer Programming </h4>
-  <h5> Java, Python, C++/C </h5>
-  <h5> HTML, CSS, Javascript, SQL, Bootstrap, AngularJS, D3.js </h5>
+  <h3> <i class="fa fa-laptop"></i>  Computer Programming </h3>
+  <h4> Java, Python, C++/C, swift </h4>
+  <h4> HTML, CSS, PHP, Javascript, SQL, Bootstrap </h4>
   </div>
   <div class="col-sm-4"> 
-  <h4> <i class="fa fa-line-chart"></i>  Statistical Programming </h4>
-  <h5> SAS, R </h5>
+  <h3> <i class="fa fa-line-chart"></i>  Statistical Programming </h3>
+  <h4> SAS, R </h4>
   </div>
   <div class="col-sm-4"> 
-  <h4> <i class="fa fa-television"></i>  Operating Systems </h4>
-  <h5> Linux/UNIX, MacOS, Windows </h5>
+  <h3> <i class="fa fa-television"></i>  Operating Systems </h3>
+  <h4> Linux/UNIX, MacOS, Windows </h4>
   </div>
   </div>
   </div>
@@ -120,11 +135,12 @@ I love coding, data, baseball, coffee, and music :) </p>
  <img src="no-image-icon.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
  </div>
  <div class="col-sm-9"> 
- <h5 class="text-left"> Full stack Web UI that dynamically visualizes data from an HFDS database (Impala) </h5>
- <h6>
-o Backend: Cloudera Impala, Java, JDBC, Apache Jersey </h6>
-<h6>o Frontend: AngularJS, HTML, CSS, JavaScript, Bootstrap, D3.js
-</h6>
+ <h3> Audit Logs Web UI </h3>
+ <h4 class="text-left"> Full stack Web UI that dynamically visualizes data from an HFDS database (Impala) </h4>
+ <h4>
+o Backend: Cloudera Impala, Java, JDBC, Apache Jersey </h4>
+<h4>o Frontend: AngularJS, HTML, CSS, JavaScript, Bootstrap, D3.js
+</h4>
  </div>
  </div>
  <div class = "row">
@@ -132,29 +148,52 @@ o Backend: Cloudera Impala, Java, JDBC, Apache Jersey </h6>
  <img src="gameproject.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
  </div>
  <div class="col-sm-9"> 
- <h5 class="text-left"> Recreation of the 1982 classic Joust game</h5>
- <h6>o Java
-</h6>
+  <h3> Joust Game </h3>
+
+ <h4 class="text-left"> Recreation of the 1982 classic Joust game</h4>
+ <h4>o Java
+</h4>
  </div>
  </div>
+
+
+  <div class = "row">
+  <div class="col-sm-3 text-right">
+ <img src="MemoryBook.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="70">
+ </div>
+ <div class="col-sm-9"> 
+   <h3> Memory Book </h3>
+
+ <h4 class="text-left"> iOS app that allows users to save places that they’ve visited using GPS along with pictures taken at each location. </h4>
+ <h4>o Swift
+</h4>
+ </div>
+ </div>
+
 <div class = "row">
   <div class="col-sm-3 text-right">
  <img src="ToDo.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
  </div>
  <div class="col-sm-9"> 
- <h5 class="text-left">Fully functional task management web application utilizing Google Maps API</h5>
- <h6>o Java, AngularJS, SpringMVC
-</h6>
+   <h3> To-do List Web App</h3>
+
+ <h4 class="text-left">Fully functional task management web application utilizing Google Maps API</h4>
+ <h4>o Java, AngularJS
+</h4>
  </div>
  </div>
+
+
   <div class = "row">
   <div class="col-sm-3 text-right">
  <img src="no-image-icon.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
  </div>
  <div class="col-sm-9"> 
- <h5 class="text-left"> Simple letter template generator that merges several columns of a csv file into one column </h5>
- <h6>o R
-</h6>
+   <h3> Letter Generator </h3>
+
+ <h4 class="text-left"> Simple letter template generator that merges several columns of a csv file into one column </h4>
+ <h4>o R
+</h4>
  </div>
  </div>
 <div class = "row">
@@ -162,8 +201,10 @@ o Backend: Cloudera Impala, Java, JDBC, Apache Jersey </h6>
  <img src="ijb.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
  </div>
  <div class="col-sm-9"> 
- <h5 class="text-left"> Translation of a Korean digital forensic company website from Korean to English</h5>
- <h5 class="text-left"> Assist with website development and website testing</h5>
+   <h3> Injungbo Website Development </h3>
+
+ <h4 class="text-left"> Translation of a Korean digital forensic company website from Korean to English</h4>
+ <h4 class="text-left"> Assist with website development and website testing</h4>
  </div>
  </div>
 
@@ -201,3 +242,43 @@ o Backend: Cloudera Impala, Java, JDBC, Apache Jersey </h6>
 
 </body>
 </html>
+
+<script type='text/javascript'>
+// set up text to print, each item in array is new line
+var aText = new Array(
+"System.out.print(Jinnie_Park);"
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+</script>
