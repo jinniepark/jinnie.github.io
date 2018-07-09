@@ -14,15 +14,59 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
+
+  .header__title {
+
+  	margin: auto;
+  	margin-top: 30px;
+   /* margin: 0 auto;*/
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    display: table;
+    padding: 0 10px;
+}
+
+.header__affiliation {
+    font-family: "Larsseit",-apple-system,BlinkMacSystemFont,"Futura",sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+.header__affiliation {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-weight: bold;
+}
+h3{
+	font-size: 20px;
+}
+h4 {
+	font-family: "Larsseit",-apple-system,BlinkMacSystemFont,"Futura",sans-serif;
+	font-size: 15px;
+}
+
+ul {
+	margin-bottom: 50px;
+	padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
   body {
-  	  font-family: 'Waiting for the Sunrise';
-  	  font-size: 50px;
-	  line-height: 1.8;
+  	  font-family: 'Courier';
+  	  font-size: 10px;
+	  line-height: 1.0;
       color: #f5f6f7;
   }
 
   h4 {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Bookman', sans-serif;
 
   }
   mark {
@@ -56,165 +100,207 @@
       padding-top: 70px;
       padding-bottom: 70px;
   }
-/*  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }*/
-/*  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }*/
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div class="row">
+		<div class="container-fluid bg-1 text-center">
+			<div class="col-sm-3">
+			</div>
+    		<div class="col-sm-3">
+  				<h1 class = "header__title"> Jinnie Park  </h1>
+  				
+   				<p class = "header__affiliation"> <mark>University of Virginia</mark></p> 
+   				<p class = "header__affiliation"> <mark>Computer Science</mark> & <mark>Statistics</mark></p>
+				<!-- <p class = "header__affiliation"> Loves coding, data, baseball, coffee, and music :) </p> -->
+				<ul class="list-unstyled list-inline">
+				<li>
+				<a href="mailto:jp7hk@virginia.edu"><i class="fa fa-envelope-o" style="font-size:20px" margin: "10 0"></i></a>
+				</li>
+				<li>
+ 				<a href="https://www.linkedin.com/in/jinnie-park-900064101/"><i class="fa fa-linkedin-square" style="font-size:20px"></i></a> 
+ 				</li>
+ 				<li>
+ 				<a href="https://github.com/jinniepark"><i class="fa fa-github" style="font-size:20px"></i></a> </h3>
+ 				</li>
+ 				</ul>
+ 				<ul class="list-unstyled list-inline">
+ 				<li>
+				<a href="index.html#skills" style="font-size:20px">Skills</a>
+				</li>
+				<li>
+				<a href="index.html#projects" style="font-size:20px">Projects</a>
+				</li>
+				<li>
+				<a href="index.html#resume" style="font-size:20px">Résumé</a>
+				</li>
+				</ul>
+			</div>
+      		<div class="col-sm-3">
+				<img src="me.jpeg" class="img-responsive" style="display:inline" alt="pic" width="300" height="300">
+			</div>
+			<div class="col-sm-3">
+			</div>
+ 		</div>
+ 	</div>
 
-
-<!-- <nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" align="center" href="#">Jinnie Park</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html#skills">SKILLS</a></li>
-        <li><a href="index.html#projects">PROJECT</a></li>
-        <li><a href="index.html#resume">RESUME</a></li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
-
-
-<div class="container-fluid bg-1 text-center">
-  <div id="typedtext"></div>
-  <img src="mypic.jpeg" class="img-responsive img-circle" style="display:inline" alt="pic" width="300" height="300">
-  <h1> Jinnie Park  </h1>
-  <h4> <a href="mailto:jp7hk@virginia.edu"><i class="fa fa-envelope-o" style="font-size:24px"></i></a> 
- <a href="https://www.linkedin.com/in/jinnie-park-900064101/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>    
- <a href="https://github.com/jinniepark"><i class="fa fa-github" style="font-size:24px"></i></a> </h3>
-   <p> University of Virginia</p> 
-   <p> Computer Science & Statistics</p>
-</p><p>
-Loves coding, data, baseball, coffee, and music :) </p>
-
-<a href="index.html#skills" style="font-size:20px">Skills</a>
-<a href="index.html#projects" style="font-size:20px">Projects</a>
-<a href="index.html#resume" style="font-size:20px">Resume</a>
- 
 
 <!--    <a href="index.html#skills" type="button" class="btn btn-primary btn-lg">Learn more</a>
  --></div>
 
 
-<div class="container-fluid bg-2 text-center" id="skills">
-  <h2 class="margin"><i class="fa fa-gear" style="font-size:24px"></i>   SKILLS</h2>
-  <div class="row">
-    <div class="col-sm-4">
-  <h3> <i class="fa fa-laptop"></i>  Computer Programming </h3>
-  <h4> Java, Python, C++/C, swift </h4>
-  <h4> HTML, CSS, PHP, Javascript, SQL, Bootstrap </h4>
-  </div>
-  <div class="col-sm-4"> 
-  <h3> <i class="fa fa-line-chart"></i>  Statistical Programming </h3>
-  <h4> SAS, R </h4>
-  </div>
-  <div class="col-sm-4"> 
-  <h3> <i class="fa fa-television"></i>  Operating Systems </h3>
-  <h4> Linux/UNIX, MacOS, Windows </h4>
-  </div>
-  </div>
-  </div>
+	<div class="container-fluid bg-2" id="skills">
+  		<h1 class="header__title"><i class="fa fa-gear"></i>   SKILLS</h1>
+  		<div class="row">
+  			<div class="col-sm-3">
+  			</div>
+    		<div class="col-sm-6" align="left">
+  				<h3> <i class="fa fa-laptop"></i>  Computer Programming </h3>
+  				<h4> Java, Python, C++/C, Swift, HTML, CSS, PHP, Javascript, SQL, Bootstrap </h4>
+  			</div>
+  			<div class="col-sm-3">
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-3">
+  			</div>
+  			<div class="col-sm-6" align="left"> 
+  				<h3> <i class="fa fa-line-chart"></i>  Statistical Programming </h3>
+  				<h4> SAS, R </h4>
+  			</div>
+  			<div class="col-sm-3">
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-3">
+  			</div>
+  			<div class="col-sm-6" align="left"> 
+  				<h3> <i class="fa fa-television"></i>  Operating Systems </h3>
+  				<h4> Linux/UNIX, MacOS, Windows </h4>
+  			</div>
+  			<div class="col-sm-3">
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-3">
+  			</div>
+  			<div class="col-sm-6" align="left">
+  				<h3> <i class="fa fa-laptop"></i> Other Skills </h3>
+  				<h4> Git, IntelliJ IDEA, Eclipse, Netbean, Android Studio, Xcode, Jira </h4>
+  			</div>
+  			<div class="col-sm-3">
+  			</div>
+  		</div>
+  	</div>
 
 
 
 <div class="container-fluid bg-3" id="projects">    
-  <h3 class="margin text-center"><i class="fa fa-file-o" style="font-size:24px"></i>  PROJECTS</h3><br>
-  <div class = "row">
-  <div class="col-sm-3 text-right">
- <img src="no-image-icon.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
- </div>
- <div class="col-sm-9"> 
- <h3> Audit Logs Web UI </h3>
- <h4 class="text-left"> Full stack Web UI that dynamically visualizes data from an HFDS database (Impala) </h4>
- <h4>
-o Backend: Cloudera Impala, Java, JDBC, Apache Jersey </h4>
-<h4>o Frontend: AngularJS, HTML, CSS, JavaScript, Bootstrap, D3.js
-</h4>
- </div>
- </div>
- <div class = "row">
-  <div class="col-sm-3 text-right">
- <img src="gameproject.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
- </div>
- <div class="col-sm-9"> 
-  <h3> Joust Game </h3>
+	<h1 class="header__title"><i class="fa fa-file-o"></i>  PROJECTS</h1>
 
- <h4 class="text-left"> Recreation of the 1982 classic Joust game</h4>
- <h4>o Java
-</h4>
- </div>
- </div>
+	<div class = "row">
+ 		<div class="col-sm-3 text-right">
+			<!-- <img src="no-image-icon.png" class="img-responsive margin" style="display:inline" alt="pic" width="100" height="100"> -->
+ 		</div>
+ 		<div class="col-sm-9"> 
+ 			<h3> <mark>Audit Logs Web UI</mark> </h3>
+ 			<h4 class = "header__affiliation">
+			o Backend: Impala, Java, JDBC, Apache Jersey </h4>
+			<h4 class = "header__affiliation">o Frontend: AngularJS, HTML, CSS, JavaScript, Bootstrap, D3.js
+			</h4>
+			<h4 class="text-left"> Full stack Web UI that dynamically visualizes data from an HFDS database (Impala) </h4>
+ 		</div>
+ 	</div>
+
+ 	<div class = "row">
+ 		<div class="col-sm-3 text-right">
+			<!-- <img src="no-image-icon.png" class="img-responsive margin" style="display:inline" alt="pic" width="100" height="100"> -->
+ 		</div>
+ 		<div class="col-sm-9"> 
+ 			<h3> <mark>Compression Aware Algorithm Research</mark> </h3>
+ 			<h4 class = "header__affiliation">
+			o Python </h4>
+			<h4 class="text-left">Researched data compression algorithmic techniques, focusing on data repair algorithm. </h4>
+			<h4 class="text-left">
+			Implemented data compression and decompression using repair algorithm in Python.
+			</h4>
+			<h4 class="text-left">
+			Created graph generation scripts using Python and tested compression ratios.
+ 			</h4>
+ 		</div>
+ 	</div>
+
+	<div class = "row margin">
+  		<div class="col-sm-3 text-right">
+ 			<!-- <img src="gameproject.png" class="img-responsive margin" style="display:inline" alt="pic" width="100" height="100"> -->
+ 		</div>
+ 		<div class="col-sm-9"> 
+  			<h3> <mark> Joust Game </mark></h3>
+  			<h4 class="header__affiliation">o Java </h4>
+			<h4 class="text-left"> Recreation of the 1982 classic Joust game</h4>
+ 		</div>
+ 	</div>
+
+ 	<div class = "row">
+		<div class="col-sm-3 text-right">
+ 			<!-- <img src="MemoryBook.png" class="img-responsive margin" style="display:inline" alt="pic" width="100" height="50"> -->
+ 		</div>
+ 		<div class="col-sm-9"> 
+   			<h3> <mark> Memory Book </mark></h3>
+   			<h4 class="header__affiliation">o Swift</h4>
+			<h4 class="text-left"> iOS app that allows users to save places that they’ve visited using GPS along with pictures taken at each location. </h4>
+		</div>
+	</div>
 
 
-  <div class = "row">
-  <div class="col-sm-3 text-right">
- <img src="MemoryBook.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="70">
- </div>
- <div class="col-sm-9"> 
-   <h3> Memory Book </h3>
+	<div class = "row">
+ 		<div class="col-sm-3 text-right">
+			<!-- <img src="Noshspoon.png" class="img-responsive margin" style="display:inline" alt="pic" width="100" height="100"> -->
+ 		</div>
+ 		<div class="col-sm-9"> 
+   			<h3> <mark> Noshspoon </mark></h3>
+   			<h4 class="header__affiliation">o HTML/CSS, PHP, MySQL</h4>
+			<h4 class="text-left"> Translation of a Korean digital forensic company website from Korean to English</h4>
+ 			<h4 class="text-left"> Assist with website development and website testing</h4>
+ 		</div>
+ 	</div>
 
- <h4 class="text-left"> iOS app that allows users to save places that they’ve visited using GPS along with pictures taken at each location. </h4>
- <h4>o Swift
-</h4>
- </div>
- </div>
-
-<div class = "row">
-  <div class="col-sm-3 text-right">
- <img src="ToDo.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
- </div>
- <div class="col-sm-9"> 
-   <h3> To-do List Web App</h3>
-
- <h4 class="text-left">Fully functional task management web application utilizing Google Maps API</h4>
- <h4>o Java, AngularJS
-</h4>
- </div>
- </div>
+	<div class = "row">
+ 		<div class="col-sm-3 text-right">
+			<!-- <img src="ToDo.png" class="img-responsive margin" style="display:inline" alt="pic" width="100" height="100"> -->
+		</div>
+ 		<div class="col-sm-9"> 
+    		<h3> <mark> To-do List Web App </mark></h3>
+    		<h4 class="header__affiliation">o Java, AngularJS
+			</h4>
+			<h4 class="text-left">Fully functional task management web application utilizing Google Maps API</h4>
+			 
+ 		</div>
+ 	</div>
 
 
-  <div class = "row">
-  <div class="col-sm-3 text-right">
- <img src="no-image-icon.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
- </div>
- <div class="col-sm-9"> 
-   <h3> Letter Generator </h3>
+ 	<div class = "row">
+ 		<div class="col-sm-3 text-right">
+			<!-- <img src="no-image-icon.png" class="img-responsive margin" style="display:inline" alt="pic" width="100" height="100"> -->
+		</div>
+ 		<div class="col-sm-9"> 
+   			<h3> <mark> Letter Generator </mark> </h3>
+   			<h4 lass="header__affiliation">o R</h4>
+			<h4 class="text-left"> Simple letter template generator that merges several columns of a csv file into one column </h4>
+		</div>
+	</div>
 
- <h4 class="text-left"> Simple letter template generator that merges several columns of a csv file into one column </h4>
- <h4>o R
-</h4>
- </div>
- </div>
-<div class = "row">
-  <div class="col-sm-3 text-right">
- <img src="ijb.png" class="img-responsive img-circle margin" style="display:inline" alt="pic" width="100" height="100">
- </div>
- <div class="col-sm-9"> 
-   <h3> Injungbo Website Development </h3>
-
- <h4 class="text-left"> Translation of a Korean digital forensic company website from Korean to English</h4>
- <h4 class="text-left"> Assist with website development and website testing</h4>
- </div>
- </div>
+	<div class = "row">
+ 		<div class="col-sm-3 text-right">
+			<!-- <img src="ijb.png" class="img-responsive margin" style="display:inline" alt="pic" width="100" height="100"> -->
+ 		</div>
+ 		<div class="col-sm-9"> 
+   			<h3> <mark> Injungbo Website Development </mark> </h3>
+			<h4 class="text-left"> Translation of a Korean digital forensic company website from Korean to English</h4>
+ 			<h4 class="text-left"> Assist with website development and website testing</h4>
+ 		</div>
+ 	</div>
 
 
  </div>
@@ -222,9 +308,9 @@ o Backend: Cloudera Impala, Java, JDBC, Apache Jersey </h4>
 
 
 <div class="container-fluid bg-5 text-center" id="resume">
-  <h3 class="margin"><i class="fa fa-check-square-o" style="font-size:24px"></i> RESUME</h3>
+  <h1 class="margin"><i class="fa fa-check-square-o" style="font-size:24px"></i> RESUME</h1>
  <h4 class="margin">Click below to see my full résumé</h4>
-   <a href="Resume_Jinnie Park.pdf" type="button" class="btn btn-primary btn-lg">Résumé</a>
+   <a href="Resume_Jinnie Park.pdf" type="button" class="btn btn-primary btn-lg header__affiliation">Résumé</a>
 </div>
 
 
@@ -232,7 +318,7 @@ o Backend: Cloudera Impala, Java, JDBC, Apache Jersey </h4>
 <footer class="container-fluid bg-4 text-center">
 <div class = "row">
   <div class="col-sm-3">
-  <p>Last updated on May 26th, 2018</p> 
+  <p class="header__affiliation">Last updated on July 8th, 2018</p> 
  </div>
  <div class="col-sm-6"> 
  
@@ -251,42 +337,3 @@ o Backend: Cloudera Impala, Java, JDBC, Apache Jersey </h4>
 </body>
 </html>
 
-<script type='text/javascript'>
-// set up text to print, each item in array is new line
-var aText = new Array(
-"System.out.print(Jinnie_Park);"
-);
-var iSpeed = 100; // time delay of print out
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
- 
-var iTextPos = 0; // initialise text position
-var sContents = ''; // initialise contents variable
-var iRow; // initialise current row
- 
-function typewriter()
-{
- sContents =  ' ';
- iRow = Math.max(0, iIndex-iScrollAt);
- var destination = document.getElementById("typedtext");
- 
- while ( iRow < iIndex ) {
-  sContents += aText[iRow++] + '<br />';
- }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
- if ( iTextPos++ == iArrLength ) {
-  iTextPos = 0;
-  iIndex++;
-  if ( iIndex != aText.length ) {
-   iArrLength = aText[iIndex].length;
-   setTimeout("typewriter()", 500);
-  }
- } else {
-  setTimeout("typewriter()", iSpeed);
- }
-}
-
-
-typewriter();
-</script>
